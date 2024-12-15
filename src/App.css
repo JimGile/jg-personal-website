@@ -23,6 +23,31 @@ header h1 {
     font-size: 2rem;
 }
 
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  /*width: 200px; */
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.menu-item {
+  padding: .5rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
 /* Sections */
 section {
     padding: 2rem 1rem;
