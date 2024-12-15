@@ -5,7 +5,7 @@ function Climbing() {
   return (
     <section>
       <h2>Climbing Expeditions</h2>
-      <p>List of projects here.</p>
+      <p>List of climbs here.</p>
     </section>
   );
 }
