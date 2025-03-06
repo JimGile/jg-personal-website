@@ -9,10 +9,28 @@ body {
     /* Dark gray text */
 }
 
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../public/assets/fa/fonts/fa-regular-400.woff2') format('woff2'),
+        url('../public/assets/fa/fonts/fa-regular-400.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../public/assets/fa/fonts/fa-solid-900.woff2') format('woff2'),
+        url('../public/assets/fa/fonts/fa-solid-900.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url('../public/assets/fa/fonts/fa-brands-400.woff2') format('woff2'),
+        url('../public/assets/fa/fonts/fa-brands-400.ttf') format('truetype');
+}
+
+
 /* Header */
-header {
+/* header {
     background-color: #007bff;
-    /* Bootstrap primary color */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -21,13 +39,33 @@ header {
 header h1 {
     margin: 0;
     font-size: 2rem;
+} */
+        
+.header-bg {
+    background-image: url('../public/image_bg_blue_gradient.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+}
+
+.profile-image {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 120px;
+    height: 120px;
+}
+        
+.section-transition {
+    position: relative;
+    height: 20px;
+    margin-top: -20px;
+    background: linear-gradient(to bottom, transparent, white);
+    z-index: 10;
 }
 
 /* Menu */
 .menu {
   display: flex;
   flex-direction: column;
-  /*width: 200px; */
   background-color: #f8f9fa;
   padding: 1rem;
 }
@@ -36,6 +74,10 @@ header h1 {
   padding: .5rem;
   border-bottom: 1px solid #ccc;
   cursor: pointer;
+}
+
+.menu-item.selected {
+    background-color: #d5e6f8; /* or any other style you want to apply */
 }
 
 .menu-item:hover {

@@ -1,10 +1,11 @@
 // src/About.js
 import React from 'react';
+import SectionTitle from './SectionTitle';
 
 function About() {
   return (
-    <section>
-      <h2>About Me</h2>
+    <section id="climbing" className="bg-white">
+      <SectionTitle>About Me</SectionTitle>
       <p>This is where you write about yourself.</p>
     </section>
   );

@@ -1,10 +1,11 @@
 // src/AiAndMl.js
 import React from 'react';
+import SectionTitle from './SectionTitle';
 
 function AiAndMl() {
   return (
-    <section>
-      <h2>AI and Machine Learning</h2>
+    <section id="ai_and_ml" className="bg-white">
+      <SectionTitle>AI and Machine Learning</SectionTitle>
       <p>List of projects here.</p>
     </section>
   );
