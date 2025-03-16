@@ -4,7 +4,7 @@ import React from 'react';
 function Header() {
   return (
     <header className="relative">
-        <div className="header-bg py-16 md:py-24 relative">
+        <div className="header-bg relative">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-10">
                         <div className="profile-image rounded-full overflow-hidden border-4 border-white w-28 h-28 md:w-32 md:h-32">
