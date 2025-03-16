@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle';
 
 function AppDevelopment() {
   return (
-    <section id="climbing" className="bg-white">
+    <section id="app_development">
       <SectionTitle>Application Development</SectionTitle>
       <p>List of projects here.</p>
     </section>

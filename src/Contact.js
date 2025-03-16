@@ -5,7 +5,7 @@ import ContactItem from './ContactItem';
 
 function Contact() {
   return (
-    <section id="contact" className="bg-white">
+    <section id="contact">
         <div className="container mx-auto px-4 md:px-8">
             <SectionTitle>Contact</SectionTitle>
             <div className="max-w-4xl mx-auto">
