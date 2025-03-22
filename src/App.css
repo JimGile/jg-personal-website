@@ -45,11 +45,11 @@ body {
 }
 
 .menu-item.selected {
-    background-color: #d5e6f8; /* or any other style you want to apply */
+    background-color: #e9ecef;
 }
 
 .menu-item:hover {
-  background-color: #e9ecef;
+  background-color: #dee2e6;
 }
 
 /* Main Content */
@@ -67,9 +67,19 @@ section {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
+section h1 {
+    color: #333; /* Dark gray text */
+    font-size: 2em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Add space below the h1 */
+  }
+
 section h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc; /* Light gray line */
+    margin-top: 0.5em; /* Adjust spacing */
+    margin-bottom: 0.5em;
 }
 
 section p {

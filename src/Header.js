@@ -16,7 +16,7 @@ function Header() {
                         </div>
                         <div className="text-left md:text-left text-white">
                             <h1 className="text-3xl md:text-4xl font-bold drop-shadow-md">Jim Gile</h1>
-                            <p className="text-lg md:text-xl mt-1 font-light drop-shadow-md">Enterprise Software Architect / Engineer | AI Solutions Developer | Ski Mountaineer</p>
+                            <p className="text-lg md:text-xl mt-1 font-light drop-shadow-md">Enterprise Software Architect | AI Solutions Developer | Full-Stack Engineer | Ski Mountaineer</p>
                         </div>
                     </div>
                 </div>
