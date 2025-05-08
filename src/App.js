@@ -4,28 +4,28 @@ import './App.css';
 import Header from './Header';
 import Menu from './Menu';
 import { getMenuItemComponent } from './menuConstants';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Box from '@mui/material/Box';
 import Footer from './Footer';
 
 function App() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('About');
 
   return (
-    <div className="App">
+    <Box className="App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
-      <Row className="mb-3 row">
-        <Col sm="3">
+      {/* Main Layout */}
+      <Box sx={{ display: 'flex', flexGrow: 1, flexDirection: 'row' }}>
+        {/* Sidebar Menu */}
+        <Box sx={{ width: '240px', flexShrink: 0, padding: 2, }} >
           <Menu selectedMenuItem={selectedMenuItem} setSelectedMenuItem={setSelectedMenuItem} />
-        </Col>
-        <Col sm="9">
-          <div className="main-content">
-            {getMenuItemComponent(selectedMenuItem).component}
-          </div>
-        </Col>
-      </Row>
+        </Box>
+        {/* Main Content */}
+        <Box sx={{ flexGrow: 1, padding: 3, backgroundColor: '#ffffff' }} >
+          {getMenuItemComponent(selectedMenuItem).component}
+        </Box>
+      </Box>
       <Footer />
-    </div>
+    </Box>
   );
 }
 

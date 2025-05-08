@@ -1,26 +1,64 @@
 // src/Header.js
 import React from 'react';
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 function Header() {
   return (
-    <header className="relative">
-        <div className="header-bg relative">
-                <div className="container mx-auto px-4 md:px-8 relative z-10">
-                    <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-10">
-                        <div className="profile-image rounded-full overflow-hidden border-4 border-white w-28 h-28 md:w-32 md:h-32">
-                          <img 
-                              src="/profile.png" 
-                              alt="Jim Gile" 
-                              className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="text-left md:text-left text-white">
-                            <h1 className="text-3xl md:text-4xl font-bold drop-shadow-md">Jim Gile</h1>
-                            <p className="text-lg md:text-xl mt-1 font-light drop-shadow-md">Enterprise Software Architect | AI Solutions Developer | Full-Stack Engineer | Ski Mountaineer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header>
+      <Box
+        className="header-bg"
+        sx={{
+          padding: 3,
+          color: 'white',
+        }}
+      >
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            alignItems: 'center',
+            gap: 3,
+          }}
+        >
+          {/* Profile Image */}
+          <Avatar
+            alt="Jim Gile"
+            src="/images/profile.png"
+            sx={{
+              width: { xs: 112, md: 128 }, // Responsive width
+              height: { xs: 112, md: 128 }, // Responsive height
+              border: '4px solid white',
+            }}
+          />
+
+          {/* Text Content */}
+          <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{
+                fontWeight: 'bold',
+                textShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)',
+              }}
+            >
+              Jim Gile
+            </Typography>
+            <Typography
+              variant="h6"
+              component="p"
+              sx={{
+                marginTop: 0,
+                fontWeight: '300',
+                textShadow: '0px 1px 3px rgba(0, 0, 0, 0.5)',
+              }}
+            >
+              Enterprise Software Engineer/Architect | AI Solutions Developer | Ski Mountaineer
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
     </header>
   );
 }

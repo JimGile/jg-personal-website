@@ -1,0 +1,26 @@
+[
+  {
+    "country": "USA",
+    "mountains": [
+        {
+            "name": "Mount Shasta",
+            "elevation": "14,179 ft",
+            "description": "A majestic, volcanic peak in California.",
+            "photoAlbum": "https://1drv.ms/a/s!AjIJlkgDERBQiNk3z9b9lBFEy6VKAA?e=JtoCb7",
+            "image": "/images/mount-shasta.jpg"
+        }
+    ]
+  },
+  {
+    "country": "Tibet",
+    "mountains": [
+      {
+        "name": "Mount Everest",
+        "elevation": "29,032 ft",
+        "description": "The tallest mountain in the world.",
+        "photoAlbum": "https://1drv.ms/a/s!AjIJlkgDERBQiNsN8uI3FHGICwdhJA?e=13v1SY",
+        "image": "/images/mount-everest.jpg"
+      }
+    ]
+  }
+]

@@ -1,4 +1,5 @@
 To run the app locally:
+0.) npm install
 1.) npm start
 
 npm help

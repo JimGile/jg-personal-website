@@ -10,7 +10,7 @@ body {
 }
         
 .header-bg {
-    background-image: url('../public/image_bg_blue_gradient.png');
+    background-image: url('../public/images/image_bg_colorado.png');
     background-size: cover;
     background-position: center;
     padding: 1rem 0;
@@ -41,11 +41,17 @@ body {
 .menu-item {
   padding: .5rem;
   border-bottom: 1px solid #ccc;
+  border-radius: 0.25rem;
   cursor: pointer;
+}
+
+.menu-item h5{
+    margin: 5px;
 }
 
 .menu-item.selected {
     background-color: #e9ecef;
+    font-weight: bolder; /* Bold text */
 }
 
 .menu-item:hover {
@@ -61,8 +67,6 @@ body {
 /* Sections */
 section {
     padding: 0rem 1rem 1rem 1rem;
-    /* margin: 1rem 0; */
-    /* background-color: white; */
     border-radius: 0.25rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
@@ -86,16 +90,15 @@ section p {
     margin-bottom: 1rem;
 }
 
-section ul {
-    /* list-style-type: none; */
+/* section ul {
     padding: 0;
     margin-bottom: 1rem;
-}
+} */
 
-section li {
-    margin-left: 2rem;
+section .MuiListItem-root li  {
+    /* list-style: none; */
     background-color: #e9ecef;
-    padding: 0.25rem;
+    /* padding: 0.25rem; */
     margin-bottom: 0.25rem;
     border-radius: 0.25rem;
 }
@@ -117,6 +120,6 @@ section a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #343a40;
+    background-color: #5f6368;
     color: white;
 }

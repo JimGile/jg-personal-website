@@ -1,24 +1,51 @@
 // src/Footer.js
 import React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Footer() {
   return (
-    <footer className="bg-gray-500 text-white py-2">
-        <div className="container mx-auto px-2 md:px-2">
-            <div className="flex flex-col md:flex-row justify-between">
-                <div className="mb-0">
-                    <p>&copy; {new Date().getFullYear()} Jim Gile. All rights reserved.</p>
-                </div>
-                <div className="flex space-x-2">
-                    <a href={`https://www.linkedin.com/in/james-gile`} className="text-gray-300 hover:text-white transition-colors duration-200">
-                        <i className="fab fa-linkedin text-xl" aria-hidden="true"></i>
-                    </a>
-                    <a href={`https://github.com/JimGile`} className="text-gray-300 hover:text-white transition-colors duration-200">
-                        <i className="fab fa-github text-xl" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <Box
+            sx={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            paddingX: 2,
+            paddingY: 0,
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            }}
+        >
+            {/* Copyright Section */}
+            <Typography variant="body2" sx={{ marginBottom: { xs: 2, md: 0 } }}>
+            &copy; {new Date().getFullYear()} Jim Gile. All rights reserved.
+            </Typography>
+
+            {/* Social Media Links */}
+            <Box sx={{ display: 'flex', gap: 2 }}>
+                <Link
+                    href="https://www.linkedin.com/in/james-gile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ color: 'white', '&:hover': { color: 'gray' } }}
+                >
+                    <LinkedInIcon fontSize="medium" />
+                </Link>
+                <Link
+                    href="https://github.com/JimGile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ color: 'white', '&:hover': { color: 'gray' } }}
+                >
+                    <GitHubIcon fontSize="medium" />
+                </Link>
+            </Box>
+        </Box>
     </footer>
   );
 }

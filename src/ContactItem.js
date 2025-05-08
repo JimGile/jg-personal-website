@@ -1,23 +1,32 @@
 // src/ContactItem.js
 import React from 'react';
 import PropTypes from 'prop-types';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
-function ContactItem({ icon, label, children }) {
-    return (
-        <div className="flex items-start">
-            <div className="flex-shrink-0 mt-1">
-                <i className={`${icon} text-blue-500 w-5 text-center`} aria-hidden="true"></i>
-            </div>
-            <div className="ml-3">
-                <h4 className="text-sm font-medium text-gray-500">{label}</h4>
-                <div className="mt-1 text-base text-gray-800">{children}</div>
-            </div>
-        </div>
-    );
+function ContactItem({ icon: IconComponent, label, children }) {
+  return (
+    <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
+      {/* Icon */}
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 0.5 }}>
+        <IconComponent sx={{ color: 'primary.main', fontSize: 24 }} aria-hidden="true" />
+      </Box>
+
+      {/* Label and Content */}
+      <Box>
+        <Typography variant="subtitle2" sx={{ color: 'text.secondary' }}>
+          {label}
+        </Typography>
+        <Typography variant="body1" sx={{ mt: 0.5, color: 'text.primary' }}>
+          {children}
+        </Typography>
+      </Box>
+    </Box>
+  );
 }
 
 ContactItem.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.elementType.isRequired, // Updated to accept a React component
   label: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
