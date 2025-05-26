@@ -50,7 +50,7 @@ const MountainCard = ({ mountain }) => {
     const urlRegex = /\((https?:\/\/[^\s)]+)\)/;
     const match = sourceText.match(urlRegex);
     
-    if (match && match[1]) {
+    if (match?.[1]) {
       const textBeforeLink = sourceText.substring(0, match.index).trim();
       const url = match[1];
       return (
