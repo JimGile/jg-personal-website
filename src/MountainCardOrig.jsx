@@ -8,25 +8,25 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-function MountainCard({ name, elevation, description, photoAlbum, image }) {
+function MountainCard({ mountainItem }) {
   return (
     <Card sx={{ marginBottom: 2, maxWidth: 350}}>
-      <CardMedia component="img" height="80" image={image} alt={`${name} image`} />
+      <CardMedia component="img" height="80" image={mountainItem.image} alt={`${mountainItem.name} image`} />
       <CardHeader
-        title={name +`  (${elevation})`}
+        title={mountainItem.name +`  (${mountainItem.elevation})`}
         sx={{ backgroundColor: 'primary.main', color: 'white', padding: .5, variant: 'h6' }}
       />
 
       {/* Card Content */}
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {description}
+          {mountainItem.description}
         </Typography>
       </CardContent>
 
       {/* Card Actions */}
       <CardActions>
-        <Button size="small" color="primary" href={photoAlbum} target="_blank" rel="noopener" >
+        <Button size="small" color="primary" href={mountainItem.photoAlbum} target="_blank" rel="noopener" >
           Photo Album
         </Button>
       </CardActions>
@@ -35,11 +35,7 @@ function MountainCard({ name, elevation, description, photoAlbum, image }) {
 }
 
 MountainCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  elevation: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  photoAlbum: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  mountainItem: PropTypes.object.isRequired,
 };
 
 export default MountainCard;

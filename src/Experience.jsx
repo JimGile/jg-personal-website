@@ -1,8 +1,9 @@
 // src/AppDevelopment.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import MarkdownContent from './MarkdownContent';
 
-function Experience({ title, company, period, mdFilePath }) {
+export default function Experience({ title, company, period, mdFilePath }) {
   return (
     <div className="max-w-4xl mx-auto">
         <div className="space-y-10">
@@ -24,4 +25,9 @@ function Experience({ title, company, period, mdFilePath }) {
   );
 }
 
-export default Experience;
+Experience.propTypes = {
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  period: PropTypes.string.isRequired,
+  mdFilePath: PropTypes.string.isRequired,
+};

@@ -13,8 +13,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function Contact() {
   return (
     <section id="contact">
-      <Box sx={{ padding: 3, alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-        <SectionTitle>Contact</SectionTitle>
+      <SectionTitle>Contact</SectionTitle>
+      <Box sx={{ padding: 1, alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
         <Box sx={{ maxWidth: '800px', margin: '0 auto' }}>
           <Grid container columns={12} spacing={5}>
             {/* Left Column */}
