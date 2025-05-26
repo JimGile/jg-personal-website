@@ -201,6 +201,8 @@ function ExpeditionList() {
                     hover
                     tabIndex={-1}
                     key={mountain['Mountain Name'] + index} // Ensure unique key
+                    onClick={() => handleMountainClick(mountain)}
+                    sx={{ cursor: 'pointer' }}
                   >
                     <TableCell padding="none" sx={{ pl:1 }}>
                       <Avatar
@@ -214,8 +216,8 @@ function ExpeditionList() {
                       <Link
                         component="button"
                         variant="body2"
-                        onClick={() => handleMountainClick(mountain)}
                         sx={{ textAlign: 'left' }}
+                        tabIndex={-1}
                       >
                         {mountain['Mountain Name']}
                       </Link>
