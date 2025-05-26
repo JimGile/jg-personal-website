@@ -70,9 +70,9 @@ function stableSort(array, comparator) {
 
 const headCells = [
   { id: 'Image URL', numeric: false, disablePadding: true, label: 'Image', sortable: false },
-  { id: 'Mountain Name', numeric: false, disablePadding: false, label: 'Mountain Name', sortable: true },
+  { id: 'Mountain Name', numeric: false, disablePadding: false, label: 'Mountain', sortable: true },
   { id: 'Country', numeric: false, disablePadding: false, label: 'Country', sortable: true },
-  { id: 'Elevation (Feet)', numeric: false, disablePadding: false, label: 'Elevation (Ft)', sortable: true },
+  { id: 'Elevation (Feet)', numeric: false, disablePadding: false, label: 'Elevation', sortable: true },
 ];
 
 
@@ -184,7 +184,6 @@ function ExpeditionList() {
         </Box>
         <TableContainer>
           <Table
-            sx={{ minWidth: 750 }}
             aria-labelledby="tableTitle"
             size="medium"
           >
