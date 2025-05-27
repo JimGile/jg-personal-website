@@ -91,7 +91,7 @@
 },
 {
   "Mountain Name": "Parinacota",
-  "Country": "Bolivia (and Chile)",
+  "Country": "Bolivia (Chile)",
   "Elevation (Feet)": "20,827 ft",
   "Elevation (Meters)": "6,348 m",
   "Mountain Range": "Andes (Cordillera Occidental)",
@@ -151,7 +151,7 @@
 },
 {
   "Mountain Name": "Marmolejo",
-  "Country": "Chile (and Argentina)",
+  "Country": "Chile (Argentina)",
   "Elevation (Feet)": "20,039 ft",
   "Elevation (Meters)": "6,108 m",
   "Mountain Range": "Andes",
@@ -166,7 +166,7 @@
 },
 {
   "Mountain Name": "Ojos Del Salado",
-  "Country": "Chile (and Argentina)",
+  "Country": "Chile (Argentina)",
   "Elevation (Feet)": "22,615 ft",
   "Elevation (Meters)": "6,893 m",
   "Mountain Range": "Andes (Puna de Atacama)",
@@ -301,7 +301,7 @@
 },
 {
   "Mountain Name": "Broad Peak",
-  "Country": "Pakistan (and China)",
+  "Country": "Pakistan (China)",
   "Elevation (Feet)": "26,414 ft",
   "Elevation (Meters)": "8,051 m",
   "Mountain Range": "Karakoram (Gasherbrum massif)",
@@ -376,7 +376,7 @@
 },
 {
   "Mountain Name": "Cho Oyu",
-  "Country": "Tibet (Nepal/China border)",
+  "Country": "Tibet (Nepal)",
   "Elevation (Feet)": "26,864 ft",
   "Elevation (Meters)": "8,188 m",
   "Mountain Range": "Himalayas (Mahalangur Himal)",
@@ -391,7 +391,7 @@
 },
 {
   "Mountain Name": "Everest",
-  "Country": "Tibet (Nepal/China border)",
+  "Country": "Tibet (Nepal)",
   "Elevation (Feet)": "29,032 ft",
   "Elevation (Meters)": "8,848.86 m",
   "Mountain Range": "Himalayas (Mahalangur Himal)",
@@ -406,7 +406,7 @@
 },
 {
   "Mountain Name": "Shishapangma",
-  "Country": "Tibet (China)",
+  "Country": "Tibet",
   "Elevation (Feet)": "26,335 ft",
   "Elevation (Meters)": "8,027 m",
   "Mountain Range": "Himalayas (Jugal Himal / Langtang Himal section)",
@@ -436,7 +436,7 @@
 },
 {
   "Mountain Name": "Mount Saint Elias",
-  "Country": "USA (and Canada)",
+  "Country": "USA (Canada)",
   "Elevation (Feet)": "18,009 ft",
   "Elevation (Meters)": "5,489 m",
   "Mountain Range": "Saint Elias Mountains",
