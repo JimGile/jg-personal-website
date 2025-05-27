@@ -74,7 +74,6 @@ const MountainCard = ({ mountain }) => {
       {mountain['Image URL'] && (
         <CardMedia
           component="img"
-          height="300"
           image={mountain['Image URL']}
           alt={`Image of ${mountain['Mountain Name']}`}
           sx={{ objectFit: 'cover' }}
