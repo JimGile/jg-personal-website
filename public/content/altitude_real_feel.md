@@ -1,4 +1,4 @@
-# ALTITUDE REAL FEEL  
+# Altitude Real Feel
 
 ## Physical Altitude vs. Pressure Altitude
 
@@ -8,7 +8,7 @@ A comparison of Denali, K2, Everest, Chimborzo, Aconcagua, and Mt Vinson.
 
 Mountaineers are obsessed with physical altitude always creating lists such as the 8,000 meter peaks, the Seven Summits, the Colorado 14'ers, and countless others. However, just like wind and humidity affect the temperature that you feel; latitude, temperature, and weather affect the altitude that you really feel and the variances can be significant enough to move peaks in and out of various lists.
 
-The [What Is Altitude](/altitdue/what-is-it) page shows that geodists are able to calculate the physical height of mountains anywhere in the world within an accuracy of a meter. So why do mountaineers care about how high a mountain is?
+The [What Is Altitude](/altitude/what-is-it) page shows that geodists are able to calculate the physical height of mountains anywhere in the world within an accuracy of a meter. So why do mountaineers care about how high a mountain is?
 
 - The human body needs oxygen to survive and lack of oxygen diminishes the body's ability to do work.
 - In general, the higher you go the less oxygen there is and the harder it is to climb let alone survive.
@@ -22,7 +22,8 @@ Of the three main necessities of life (air, water, and food), oxygen is the most
 
 We get oxygen from the atmosphere which is a large mass of air that is several miles high. Air is compressible and has weight. The weight of all that air, at sea level, is roughly equivalent to 32 feet or ten meters of water. The weight of the air above you compresses the air around you, increasing the pressure. As you go up in altitude, there is less air above so the air around you becomes less compressed and is therefore thinner. As air gets thinner, it contains fewer gasses per unit of volume, and therefore less oxygen. (http://www.altitude.org/why_less_oxygen.php)
 
-![1976 International Standard Atmosphere Table](/images/BarometricPressureVsAltitude.webp) 
+[![1976 International Standard Atmosphere Table](/images/BarometricPressureVsAltitude.webp)](http://www.altitude.org/why_less_oxygen.php)
+<p align="center">1976 International Standard Atmosphere Table</p>
 
 ## Other factors that affect oxygen deprivation:
 
@@ -36,8 +37,8 @@ Just like there is no uniform sea level, there is no uniform atmospheric pressur
 
 Since cold air is more dense than warm air, at low temperatures the entire atmosphere is compressed downwards. Therefore, a specified air pressure will lie at a lower altitude in a cold environment compared to a warmer one. Temperature can change pressure by up to 15% from standard values. Using Dr. Helman's equation (13c), I compared perceived "Pressure Altitudes" for various well known peaks at high, mid, and zero latitudes including Denali (20,320 feet at 63° N), K2 (28,251 feet at 35° N), Everest (29,035 feet at 27° N), Chimborazo (20,702 feet at 01° S), Aconcagua (22,841 feet at 32° S), and Mt Vinson (16,050 feet at 78° S). I also included the 2 highest peaks in the lower 48 States Mt Whitney (14,505 feet at 36° N) and Mt Elbert (14,440 feet at 39° N) just for reference. I gathered historical average monthly temperature data from Wikipedia for towns near each mountain which served as the basis for the calculations and the results were surprising. (Note: the average monthly temperature data are rough approximations but the calculations are based on solid mathematical and physical principles. So the calculated pressure altitudes aren't absolutely accurate but should be accurate relative to one another.) 
 
-![Physical Altitude Vs Pressure Altitude](/images/PhysicalAltitudeVsPressureAltitude.webp)  
-Click here for the spreadsheet with full data and calculations.
+[![Physical Altitude Vs Pressure Altitude](/images/PhysicalAltitudeVsPressureAltitude.webp)](/content/PhysicalAltitudeVsPressureAltitude.ods)
+<p align="center">Click image for the spreadsheet with full data and calculations.</p>
 
 ## Insights from the Graph:
 

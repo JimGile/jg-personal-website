@@ -1,9 +1,7 @@
 // menuConstants.jsx
-import About from './About';
 import ExpeditionList from './ExpeditionList';
-import WhatIsAltitude from './WhatIsAltitude';
-import AltitudeRealFeel from './AltitudeRealFeel';
 import Contact from './Contact';
+import GenericMarkdownContent from './GenericMarkdownContent';
 import HikingIcon from '@mui/icons-material/Hiking';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import InfoIcon from '@mui/icons-material/Info';
@@ -17,7 +15,7 @@ export const MENU_ITEMS = [
     type: 'link',
     path: '/about',
     icon: <InfoIcon />,
-    component: <About />,
+    component: <GenericMarkdownContent sectionId="about" />,
   }),
   new NavigationMenuItem({
     name: 'Expeditions',
@@ -38,14 +36,21 @@ export const MENU_ITEMS = [
         type: 'link',
         path: '/altitude/what-is-it',
         icon: <DescriptionIcon />,
-        component: <WhatIsAltitude />,
+        component: <GenericMarkdownContent sectionId="what_is_altitude" />,
       }),
       new NavigationMenuItem({
         name: 'Altitude Real Feel',
         type: 'link',
         path: '/altitude/real-feel',
         icon: <DescriptionIcon />,
-        component: <AltitudeRealFeel />,
+        component: <GenericMarkdownContent sectionId="altitude_real_feel" />,
+      }),
+      new NavigationMenuItem({
+        name: 'Climbing Without Oxygen',
+        type: 'link',
+        path: '/altitude/climbing-without-oxygen',
+        icon: <DescriptionIcon />,
+        component: <GenericMarkdownContent sectionId="climbing_without_oxygen" />,
       }),
     ],
   }),

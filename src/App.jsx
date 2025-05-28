@@ -45,7 +45,7 @@ export default function App() {
 
   return (
     <Router>
-      <Box className="App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Box className="site-container App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <CssBaseline />
         <AppBarHeader toggleMenu={toggleMenu} />
         {/* Main Layout */}

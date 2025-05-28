@@ -6,7 +6,9 @@
 
 ## What is sea level and how is it calculated?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q65O3qA0-n4" frameborder="0" allowfullscreen></iframe>
+<div class="responsive-iframe">
+  <iframe src="https://www.youtube.com/embed/q65O3qA0-n4" allowfullscreen></iframe>
+</div>
 
 ## Highlights from the video:
 
@@ -16,3 +18,5 @@
 - Continents and mountains have more gravitational pull thus attracting more water which raises the sea level.
 - Geodesists define Sea level as the calculated height of the sea as if the mass of the mountain was there but not the mountain itself.
 - Geodesists created the World Gravitational Model to predict the average sea level within a meter anywhere on earth which is used in GPS devices and is the basis for the actual height of mountains on the earth.
+
+-Jim Gile
