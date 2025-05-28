@@ -45,8 +45,10 @@ const textContent = (
             component="p"
             sx={{
                 marginTop: 0,
+                color: 'grey.200',
+                fontSize: { xs: '1rem', md: '1.25rem' },
                 fontWeight: '100',
-                textShadow: '0px 1px 3px rgba(0, 0, 0, 0.5)',
+                textShadow: '2px 2px 0px rgba(0, 0, 0, 1)',
             }}
         >
             Software Engineer/Architect | AI Developer | Ski Mountaineer

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -69,15 +70,15 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
-  { id: 'Image URL', numeric: false, disablePadding: true, label: 'Image', sortable: false },
-  { id: 'Mountain Name', numeric: false, disablePadding: false, label: 'Mountain', sortable: true },
-  { id: 'Country', numeric: false, disablePadding: false, label: 'Country', sortable: true },
-  { id: 'Elevation (Feet)', numeric: false, disablePadding: false, label: 'Elevation', sortable: true },
+  { id: 'Image URL', numeric: false, disablePadding: true, label: 'Image', sortable: false, mobileHidden: false },
+  { id: 'Mountain Name', numeric: false, disablePadding: false, label: 'Mountain', sortable: true, mobileHidden: false },
+  { id: 'Country', numeric: false, disablePadding: false, label: 'Country', sortable: true, mobileHidden: true },
+  { id: 'Elevation (Feet)', numeric: false, disablePadding: false, label: 'Elevation', sortable: true, mobileHidden: false },
 ];
 
 
 function EnhancedTableHead(props) {
-  const { order, orderBy, onRequestSort } = props;
+  const { order, orderBy, onRequestSort, isMobile } = props;
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
@@ -85,7 +86,7 @@ function EnhancedTableHead(props) {
   return (
     <TableHead>
       <TableRow>
-        {headCells.map((headCell) => (
+        {headCells.filter(h => !(isMobile && h.mobileHidden)).map((headCell) => (
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? 'right' : 'left'}
@@ -120,6 +121,7 @@ EnhancedTableHead.propTypes = {
   order: PropTypes.oneOf(['asc', 'desc']).isRequired,
   orderBy: PropTypes.string.isRequired,
   onRequestSort: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 function ExpeditionList() {
@@ -129,6 +131,8 @@ function ExpeditionList() {
   const [rowsPerPage] = useState(10); // Fixed as per requirement
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedMountain, setSelectedMountain] = useState(null);
+
+  const isMobile = useMediaQuery('(max-width:600px)');
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -186,50 +190,66 @@ function ExpeditionList() {
           <Table
             aria-labelledby="tableTitle"
             size="medium"
-            sx={{ minWidth: 400, width: '100%', tableLayout: 'auto' }}
+            sx={{ width: '100%', tableLayout: 'auto' }}
           >
             <EnhancedTableHead
               order={order}
               orderBy={orderBy}
               onRequestSort={handleRequestSort}
+              isMobile={isMobile}
             />
             <TableBody>
               {sortedAndPaginatedMountains.map((mountain, index) => {
                 const labelId = `enhanced-table-checkbox-${index}`;
+                // Only show columns where mobileHidden is false (on mobile)
+                const visibleCells = headCells.filter(h => !(isMobile && h.mobileHidden));
                 return (
                   <TableRow
                     hover
                     tabIndex={-1}
-                    key={mountain['Mountain Name'] + index} // Ensure unique key
+                    key={mountain['Mountain Name'] + index}
                     onClick={() => handleMountainClick(mountain)}
                     sx={{ cursor: 'pointer' }}
                   >
-                    <TableCell padding="none" sx={{ pl:1 }}>
-                      <Avatar
-                        src={mountain['Image URL']}
-                        alt={mountain['Mountain Name']}
-                        variant="rounded"
-                        sx={{ width: 60, height: 40, mr: 1 }}
-                      />
-                    </TableCell>
-                    <TableCell component="th" id={labelId} scope="row">
-                      <Link
-                        component="button"
-                        variant="body2"
-                        sx={{ textAlign: 'left' }}
-                        tabIndex={-1}
-                      >
-                        {mountain['Mountain Name']}
-                      </Link>
-                    </TableCell>
-                    <TableCell>{mountain['Country']}</TableCell>
-                    <TableCell>{mountain['Elevation (Feet)']}</TableCell>
+                    {visibleCells.map((headCell) => {
+                      if (headCell.id === 'Image URL') {
+                        return (
+                          <TableCell key={headCell.id} padding="none" sx={{ pl: 1 }}>
+                            <Avatar
+                              src={mountain['Image URL']}
+                              alt={mountain['Mountain Name']}
+                              variant="rounded"
+                              sx={{ width: 60, height: 40, mr: 1 }}
+                            />
+                          </TableCell>
+                        );
+                      }
+                      if (headCell.id === 'Mountain Name') {
+                        return (
+                          <TableCell key={headCell.id} component="th" id={labelId} scope="row">
+                            <Link
+                              component="button"
+                              variant="body2"
+                              sx={{ textAlign: 'left' }}
+                              tabIndex={-1}
+                            >
+                              {mountain['Mountain Name']}
+                            </Link>
+                          </TableCell>
+                        );
+                      }
+                      return (
+                        <TableCell key={headCell.id}>
+                          {mountain[headCell.id]}
+                        </TableCell>
+                      );
+                    })}
                   </TableRow>
                 );
               })}
               {sortedAndPaginatedMountains.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={4} align="center">
+                  <TableCell colSpan={headCells.filter(h => !(isMobile && h.mobileHidden)).length} align="center">
                     No mountains found.
                   </TableCell>
                 </TableRow>
@@ -238,7 +258,7 @@ function ExpeditionList() {
           </Table>
         </TableContainer>
         <TablePagination
-          rowsPerPageOptions={[10]} // Fixed as per requirement
+          rowsPerPageOptions={[10]}
           component="div"
           count={filteredMountains.length}
           rowsPerPage={rowsPerPage}
@@ -246,7 +266,6 @@ function ExpeditionList() {
           onPageChange={handleChangePage}
         />
       </Paper>
-
       <Dialog
         open={Boolean(selectedMountain)}
         onClose={handleCloseModal}
