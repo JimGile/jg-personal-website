@@ -74,7 +74,7 @@ export function getMenuItemComponent(path) {
   function findComponent(items) {
     for (const item of items) {
       if (item.path === path && item.component) return item.component;
-      if (item.children && item.children.length) {
+      if (item.children?.length) {
         const found = findComponent(item.children);
         if (found) return found;
       }

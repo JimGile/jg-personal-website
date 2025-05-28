@@ -19,7 +19,7 @@ function flattenMenuItems(items) {
     if (item.type === 'link' && item.path && item.component) {
       flat.push(item);
     }
-    if (item.children && item.children.length) {
+    if (item.children?.length) {
       flat = flat.concat(flattenMenuItems(item.children));
     }
   }
