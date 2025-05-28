@@ -10,7 +10,7 @@ import Footer from './AppFooter';
 import AppSidebarMenu from "./AppSidebarMenu";
 import { MENU_ITEMS } from "./menuConstants";
 
-const menuWidth = 200;
+const menuWidth = 240;
 
 // Helper to flatten menu items for routing
 function flattenMenuItems(items) {
@@ -60,7 +60,7 @@ export default function App() {
             />
           )}
           {/* Main Content */}
-          <Box sx={{ flexGrow: 1, padding: 1, backgroundColor: '#ffffff' }} >
+          <Box sx={{ flexGrow: 1, padding: 0.125, backgroundColor: '#ffffff' }} >
             <Routes>
               {/* Default route redirects to the first link-type menu item */}
               <Route path="/" element={<Navigate to={flatMenuItems[0].path} replace />} />

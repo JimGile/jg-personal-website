@@ -8,14 +8,16 @@ The simple answer is because we can. We chose our parents wisely and were lucky 
 <div class="responsive-iframe">
   <iframe src="https://player.vimeo.com/video/107776015" allowfullscreen></iframe>
 </div>
-Climbing and Skiing Without Oxygen from 8KPeak on Vimeo.
+<small>Climbing and Skiing Without Oxygen from 8KPeak on Vimeo.</small>
+
+## It's a choice
 
 The more complex answer is that we climb without oxygen because we choose to experience the mountains to their full extent and all that goes with it. We don't see mountains as objectives to be conquered, don't try to bring the mountain down to our level, and don't stack the deck in our favor with the only goal of topping out. We view expeditions as vacations; they are opportunities to see different parts of the world, experience different cultures, meet new people, and hangout and laugh with friends.
 
 ![Jim Gile on the North Ridge of Everest 2007](/images/E067_IMG_0337_large.webp)
-<p align="center">Jim Gile on the North Ridge of Everest, 2007</p>
+<small>Jim Gile on the North Ridge of Everest, 2007</small>
 
 ![Steve, Mike, Kevin, JO, and Jim summit of Cotopaxi, 2005](/images/100_0789_large.webp)
-<p align="center">Steve, Mike, Kevin, JO, and Jim summit of Cotopaxi, 2005</p>
+<small>Steve, Mike, Kevin, JO, and Jim summit of Cotopaxi, 2005</small>
 
 -Jim Gile

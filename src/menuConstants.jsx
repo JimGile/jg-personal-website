@@ -52,6 +52,13 @@ export const MENU_ITEMS = [
         icon: <DescriptionIcon />,
         component: <GenericMarkdownContent sectionId="climbing_without_oxygen" />,
       }),
+      new NavigationMenuItem({
+        name: 'Climbing With Oxygen',
+        type: 'link',
+        path: '/altitude/climbing-with-oxygen',
+        icon: <DescriptionIcon />,
+        component: <GenericMarkdownContent sectionId="climbing_with_oxygen" />,
+      }),
     ],
   }),
   new NavigationMenuItem({

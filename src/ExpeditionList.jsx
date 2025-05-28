@@ -182,10 +182,11 @@ function ExpeditionList() {
             onChange={handleSearchChange}
           />
         </Box>
-        <TableContainer>
+        <TableContainer sx={{ width: '100%', overflowX: 'auto' }}>
           <Table
             aria-labelledby="tableTitle"
             size="medium"
+            sx={{ minWidth: 400, width: '100%', tableLayout: 'auto' }}
           >
             <EnhancedTableHead
               order={order}
