@@ -12,6 +12,20 @@ import { MENU_ITEMS } from "./menuConstants";
 
 const menuWidth = 200;
 
+// Helper to flatten menu items for routing
+function flattenMenuItems(items) {
+  let flat = [];
+  for (const item of items) {
+    if (item.type === 'link' && item.path && item.component) {
+      flat.push(item);
+    }
+    if (item.children && item.children.length) {
+      flat = flat.concat(flattenMenuItems(item.children));
+    }
+  }
+  return flat;
+}
+
 // Main App component
 export default function App() {
   const theme = useTheme();
@@ -26,6 +40,8 @@ export default function App() {
   const handleMenuItemClick = () => {
     if (isMobile) setMenuOpen(false);
   };
+
+  const flatMenuItems = flattenMenuItems(MENU_ITEMS);
 
   return (
     <Router>
@@ -46,12 +62,12 @@ export default function App() {
           {/* Main Content */}
           <Box sx={{ flexGrow: 1, padding: 1, backgroundColor: '#ffffff' }} >
             <Routes>
-              {/* Default route redirects to the first menu item */}
-              <Route path="/" element={<Navigate to={`/${MENU_ITEMS[0].name.toLowerCase()}`} replace />} />
-              {MENU_ITEMS.map((menuItem) => (
+              {/* Default route redirects to the first link-type menu item */}
+              <Route path="/" element={<Navigate to={flatMenuItems[0].path} replace />} />
+              {flatMenuItems.map((menuItem) => (
                 <Route
-                  key={menuItem.name}
-                  path={`/${menuItem.name.toLowerCase()}`}
+                  key={menuItem.path}
+                  path={menuItem.path}
                   element={menuItem.component}
                 />
               ))}

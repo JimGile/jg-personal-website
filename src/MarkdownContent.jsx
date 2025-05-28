@@ -1,51 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
-const MarkdownContent = ({ filePath }) => {
-  const [markdown, setMarkdown] = useState('Loading content...');
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+/**
+ * MarkdownContent component to fetch and render markdown content from a file.
+ * Uses ReactMarkdown with rehypeRaw to allow raw HTML in markdown.
+ *
+ * @param {Object} props - Component properties
+ * @param {string} props.filePath - Path to the markdown file
+ * @returns {JSX.Element} Rendered markdown content
+ */
+export default function MarkdownContent({ filePath }) {
+  const [content, setContent] = useState('');
 
   useEffect(() => {
-    // Function to fetch the markdown file
-    const fetchMarkdown = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch(filePath);
+    fetch(filePath)
+      .then((res) => res.text())
+      .then(setContent);
+  }, [filePath]);
 
-        if (!response.ok) {
-          throw new Error(`Failed to load markdown: ${response.status} ${response.statusText}`);
-        }
-
-        const text = await response.text();
-        setMarkdown(text);
-        setError(null);
-      } catch (err) {
-        console.error('Error loading markdown:', err);
-        setError(`Error loading content: ${err.message}`);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchMarkdown();
-  }, [filePath]); // Re-fetch when filePath changes
-
-  if (isLoading) {
-    return <div className="animate-pulse p-4">Loading content...</div>;
-  }
-
-  if (error) {
-    return <div className="text-red-600 p-4 bg-red-100 rounded">{error}</div>;
-  }
-
-  // Using ReactMarkdown component to render the content
-  return <ReactMarkdown>{markdown}</ReactMarkdown>;
-};
+  return (
+    <ReactMarkdown
+      rehypePlugins={[rehypeRaw]}
+    >
+      {content}
+    </ReactMarkdown>
+  );
+}
 
 MarkdownContent.propTypes = {
   filePath: PropTypes.string.isRequired,
 };
-
-export default MarkdownContent;
