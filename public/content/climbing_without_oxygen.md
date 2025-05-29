@@ -4,7 +4,6 @@
 
 The simple answer is because we can. We chose our parents wisely and were lucky enough to grow up, live, and train in the mountains of Colorado. After many years of climbing to high altitudes, our bodies have learned to adapt to the harsh, oxygen deprived environment. That doesn't mean we don't feel the effects of altitude, we do. The first time we go above 14,000 feet on a big mountain we all feel the familiar signs of a headache, loss of appetite, and lethargy. That is all part of the natural acclimatization process so we always try to go slow, give our bodies time to adjust, drink plenty of fluids, and take Aspirin/Advil as needed.
 
-
 <div class="responsive-iframe">
   <iframe src="https://player.vimeo.com/video/107776015" allowfullscreen></iframe>
 </div>

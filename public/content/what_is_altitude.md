@@ -10,7 +10,7 @@
   <iframe src="https://www.youtube.com/embed/q65O3qA0-n4" allowfullscreen></iframe>
 </div>
 
-## Highlights from the video:
+## Highlights from the video
 
 - The earth is not round, it is an ellipsoid that is 42 km wider across at the equator than from pole to pole.
 - The summit of Chimborazo, in Ecuador, is the furthest point from the center of the earth. Not Everest.

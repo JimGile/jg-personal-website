@@ -13,7 +13,7 @@ Some people state that climbing with oxygen is cheating. The intention of this p
 
 ## My Experience
 
-When we were at advanced base camp on the North side of Everest in 2007 we started talking to a woman in her 50's who had just come down from topping out. I asked her what it felt like sleeping at 27,000 feet and she said "I slept like a baby". We have never used oxygen on any of our climbs so her response was completely unfathomable and has stuck with me ever since. It really made me wonder, can using oxygen truly have that big of an effect? My research started with the book, Going Higher: Oxygen, Man, and Mountains by Dr. Charles Houston, which I highly recommend. 
+When we were at advanced base camp on the North side of Everest in 2007 we started talking to a woman in her 50's who had just come down from topping out. I asked her what it felt like sleeping at 27,000 feet and she said "I slept like a baby". We have never used oxygen on any of our climbs so her response was completely unfathomable and has stuck with me ever since. It really made me wonder, can using oxygen truly have that big of an effect? My research started with the book, Going Higher: Oxygen, Man, and Mountains by Dr. Charles Houston, which I highly recommend.
 
 ## Decrease in Physiological or Perceived Altitude Due to Supplemental Oxygen
 
@@ -23,12 +23,11 @@ Supplemental oxygen benefits climbers in two different ways. First, it decreases
 
 ### Air is Only 21% Oxygen
 
-First of all, air does not equal oxygen. Air throughout the lower atmosphere is primarily composed of [nitrogen (78.08%), oxygen (20.95%), and argon (0.93%)](https://www.noaa.gov/jetstream/atmosphere). Therefore, using supplemental oxygen increases the percentage of oxygen (O2) in the air that you breathe. So how does that help climbers at high altitudes? The [Altitude Real Feel](/altitude/real-feel) page shows how air pressure decreases with altitude and also how that pressure varies with latitude, temperature, and weather. While we cannot alter the low ambient air pressure found at higher altitudes, we can enhance the oxygen concentration in the air by using supplemental oxygen. This increase in the percentage of oxygen raises the partial pressure of O2, effectively simulating a lower altitude environment. 
+First of all, air does not equal oxygen. Air throughout the lower atmosphere is primarily composed of [nitrogen (78.08%), oxygen (20.95%), and argon (0.93%)](https://www.noaa.gov/jetstream/atmosphere). Therefore, using supplemental oxygen increases the percentage of oxygen (O2) in the air that you breathe. So how does that help climbers at high altitudes? The [Altitude Real Feel](/altitude/real-feel) page shows how air pressure decreases with altitude and also how that pressure varies with latitude, temperature, and weather. While we cannot alter the low ambient air pressure found at higher altitudes, we can enhance the oxygen concentration in the air by using supplemental oxygen. This increase in the percentage of oxygen raises the partial pressure of O2, effectively simulating a lower altitude environment.
 
 ### Partial Pressure of Oxygen
 
 The body's respiratory system depends on the partial pressure of oxygen within the air that we breathe because the higher O2 partial pressure makes it easier for oxygen to be assimilated, or "pushed", from the alveoli in the lungs into the blood stream and ultimately be used by the muscles to do work. For example, the standard atmospheric air pressure at sea level is 760 torr and since oxygen makes up 21% of that air, the O2 partial pressure is 760x.21=160 torr. So, if breathing supplemental oxygen increases the O2 percentage from 21% to 50%, then the O2 partial pressure would increase from 160 torr to 760x.5=380 torr. That is why you see people benefiting from the use of supplemental oxygen, delivered via simple nasal prongs, even at sea level.
-
 
 ### Respiratory Volume (RV)
 
@@ -56,27 +55,27 @@ Now that we have covered all of the background information, we can use this data
 This chart shows the numbers for a respiratory volume (RV) of 50 L/min which represents hard climbing at altitude. With a flow rate (FR) of 4 L/min, the summit of Everest feels like 19,700 feet. **At a flow rate of 6 L/min, the summit of Everest feels like 17,100 feet**.
 
 ![Hard climbing at altitude](/images/ClimbingWithO2FlowRateRv50.webp)
-<small>Hard climbing (RV=50) at various Flow Rates</small> 
+<small>Hard climbing (RV=50) at various Flow Rates</small>
 
 ### Breathing Efficiently While Climbing
 
 This chart shows the numbers for a respiratory volume of 30 L/min which represents efficient climbing at altitude. With a flow rate of 4 L/min, the summit of Everest feels like 16,250 feet. **At a flow rate of 6 L/min, the summit of Everest feels like 12,400 feet**.
 
 ![Efficient climbing at altitude](/images/ClimbingWithO2FlowRateRv30.webp)
-<small>Efficient climbing (RV=30) at various Flow Rates</small> 
- 
+<small>Efficient climbing (RV=30) at various Flow Rates</small>
+
 ### Sleeping at Altitude
 
 This chart shows the numbers for a respiratory volume of 10 L/min which represents sleeping at altitude. **With a flow rate of 2 L/min, sleeping at 27,000 feet feels like sleeping at 10,000 feet**.
 
 ![Sleeping at altitude](/images/SleepingWithO2FlowRateRv10.webp)
-<small>Sleeping at altitude (RV=10) at various Flow Rates</small> 
+<small>Sleeping at altitude (RV=10) at various Flow Rates</small>
 
 ## Conclusion
 
 As you can see from the graphs above, the results are astounding especially for the 2 lower respiratory volumes of 30 and 10 L/min. It is easy to see why that lady on Everest was able to "sleep like a baby" at 27,000 feet. If she was on a flow rate of 2 L/min she was effectively sleeping at 10,000 feet, a full 17,000 feet lower than the physical altitude!
 
-If you are interested, you can download the Excel spreadsheet [here](/content/SupplementalOxygenCalculations.xlsx) and try some of your own RV and FR values.
+If you are interested, you can [download the Excel spreadsheet](/content/SupplementalOxygenCalculations.xlsx) and try some of your own RV and FR values.
 
 **Note:** During my research I found a National Geographic blog post that contained a blurb by the great American alpinist and doctor Tom Hornbein who did some similar calculations in 2012.
 
