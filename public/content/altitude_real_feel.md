@@ -8,7 +8,7 @@ A comparison of Denali, K2, Everest, Chimborzo, Aconcagua, and Mt Vinson.
 
 Mountaineers are obsessed with physical altitude always creating lists such as the 8,000 meter peaks, the Seven Summits, the Colorado 14'ers, and countless others. However, just like wind and humidity affect the temperature that you feel; latitude, temperature, and weather affect the altitude that you really feel and the variances can be significant enough to move peaks in and out of various lists.
 
-The [What Is Altitude](/altitude/what-is-it) page shows that geodists are able to calculate the physical height of mountains anywhere in the world within an accuracy of a meter. So why do mountaineers care about how high a mountain is?
+The [What Is Altitude](/altitude/what-is-it) page shows that geodesists are able to calculate the physical height of mountains anywhere in the world within an accuracy of a meter. So why do mountaineers care about how high a mountain is?
 
 - The human body needs oxygen to survive and lack of oxygen diminishes the body's ability to do work.
 - In general, the higher you go the less oxygen there is and the harder it is to climb let alone survive.

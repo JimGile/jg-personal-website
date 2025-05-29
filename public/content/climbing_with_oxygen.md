@@ -27,7 +27,7 @@ First of all, air does not equal oxygen. Air throughout the lower atmosphere is 
 
 ### Partial Pressure of Oxygen
 
-The body's respiratory system depends on the partial pressure of oxygen within the air that we breathe because the higher O2 partial pressure makes it easier for oxygen to be assimilated "pushed" from the alevioli in the lungs into the blood stream and ultimately be used by the muscles to do work. For example, the standard atmospheric air pressure at sea level is 760 torr and since oxygen makes up 21% of that air, the O2 partial pressure is 760x.21=160 torr. So, if breathing supplemental oxygen increases the O2 percentage from 21% to 50%, then the O2 partial pressure would increase from 160 torr to 760x.5=380 torr. That is why you see people benefiting from the use of supplemental oxygen, delivered via simple nasal prongs, even at sea level.
+The body's respiratory system depends on the partial pressure of oxygen within the air that we breathe because the higher O2 partial pressure makes it easier for oxygen to be assimilated, or "pushed", from the alveoli in the lungs into the blood stream and ultimately be used by the muscles to do work. For example, the standard atmospheric air pressure at sea level is 760 torr and since oxygen makes up 21% of that air, the O2 partial pressure is 760x.21=160 torr. So, if breathing supplemental oxygen increases the O2 percentage from 21% to 50%, then the O2 partial pressure would increase from 160 torr to 760x.5=380 torr. That is why you see people benefiting from the use of supplemental oxygen, delivered via simple nasal prongs, even at sea level.
 
 
 ### Respiratory Volume (RV)
@@ -47,7 +47,7 @@ People who climb with supplemental oxygen don't use simple nasal prongs because 
 
 ## The Model
 
-Now that we have covered all of the background information, we can use this data to model how the use of O's affects the perceived altitude for various respiratory volumes (RV) and flow rates (FR). The model involves calculating the standard O2 partial pressure of ambient air at various altitudes and comparing that to the calculated O2 partial pressure while using supplemental oxygen at those same altitudes for various RV and FR values. I used normal climbing flow rates which range from 1 to 4 liters/min and chose high altitude respiratory volumes of 50, 30 and 10 liters/min to represent hard climbing, efficient climbing, and sleeping respectively.
+Now that we have covered all of the background information, we can use this data to model how the use of O's affects the perceived altitude for various respiratory volumes (RV) and flow rates (FR). The model involves calculating the standard O2 partial pressure of ambient air at various altitudes and comparing that to the calculated O2 partial pressure while using supplemental oxygen at those same altitudes for various RV and FR values. I used normal climbing flow rates which range from 1 to 6 liters/min and chose high altitude respiratory volumes of 50, 30 and 10 liters/min to represent hard climbing, efficient climbing, and sleeping respectively.
 
 ## The Numbers
 
