@@ -1,5 +1,6 @@
 // menuConstants.jsx
 import ExpeditionList from './ExpeditionList';
+import SupplementalOxygenEquivalentAltitudeCalculator from './SupplementalOxygenEquivalentAltitudeCalculator';
 import Contact from './Contact';
 import GenericMarkdownContent from './GenericMarkdownContent';
 import HikingIcon from '@mui/icons-material/Hiking';
@@ -7,6 +8,7 @@ import TerrainIcon from '@mui/icons-material/Terrain';
 import InfoIcon from '@mui/icons-material/Info';
 import MailIcon from '@mui/icons-material/Mail';
 import DescriptionIcon from '@mui/icons-material/Description';
+import CalculateIcon from '@mui/icons-material/Calculate';
 import { NavigationMenuItem } from './NavigationMenuItem';
 
 export const MENU_ITEMS = [
@@ -58,6 +60,13 @@ export const MENU_ITEMS = [
         path: '/altitude/climbing-with-oxygen',
         icon: <DescriptionIcon />,
         component: <GenericMarkdownContent sectionId="climbing_with_oxygen" />,
+      }),
+      new NavigationMenuItem({
+        name: 'Supplemental O2 Equivalent Altitude Calculator',
+        type: 'link',
+        path: '/altitude/supplemental-o2-equiv-alt-calculator',
+        icon: <CalculateIcon />,
+        component: <SupplementalOxygenEquivalentAltitudeCalculator />,
       }),
     ],
   }),

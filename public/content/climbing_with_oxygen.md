@@ -75,7 +75,7 @@ This chart shows the numbers for a respiratory volume of 10 L/min which represen
 
 As you can see from the graphs above, the results are astounding especially for the 2 lower respiratory volumes of 30 and 10 L/min. It is easy to see why that lady on Everest was able to "sleep like a baby" at 27,000 feet. If she was on a flow rate of 2 L/min she was effectively sleeping at 10,000 feet, a full 17,000 feet lower than the physical altitude!
 
-If you are interested, you can [download the Excel spreadsheet](/content/SupplementalOxygenCalculations.xlsx) and try some of your own RV and FR values.
+If you are interested, you can [play with the Supplemental O2 Equivalent Altitude Calculator](/altitude/supplemental-o2-equiv-alt-calculator) and try some of your own RV and FR values.
 
 **Note:** During my research I found a National Geographic blog post that contained a blurb by the great American alpinist and doctor Tom Hornbein who did some similar calculations in 2012.
 
