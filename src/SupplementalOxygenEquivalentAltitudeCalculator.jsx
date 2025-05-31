@@ -219,8 +219,16 @@ const SupplementalOxygenEquivalentAltitudeCalculator = () => {
         <Typography variant="h6" gutterBottom>Inputs</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} md={4}>
-            
-            <TextField size='small' label={`Physical Altitude (${altitudeUnitLabel})`} name="physicalAltitude" type="number" value={inputs.physicalAltitude} onChange={handleInputChange} margin="dense" inputProps={{ step: inputs.measurementUnits === "Feet" ? 100 : 30 }} />
+            <TextField
+              size='small'
+              label={`Physical Altitude (${altitudeUnitLabel})`}
+              name="physicalAltitude"
+              type="number"
+              value={inputs.physicalAltitude}
+              onChange={handleInputChange}
+              margin="dense"
+              slotProps={{ input: { step: inputs.measurementUnits === "Feet" ? 100 : 30 } }}
+            />
             <FormControl size='small' margin="dense">
               <InputLabel id="measurement-units-label">Units</InputLabel>
               <Select labelId="measurement-units-label" name="measurementUnits" value={inputs.measurementUnits} label="Units" onChange={handleInputChange}>
