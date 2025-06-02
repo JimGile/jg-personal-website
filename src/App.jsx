@@ -47,9 +47,12 @@ export default function App() {
     <Router>
       <Box className="site-container App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <CssBaseline />
-        <AppBarHeader toggleMenu={toggleMenu} />
-        {/* Main Layout */}
-        <Box sx={{ display: 'flex', flexGrow: 1, flexDirection: 'row' }}>
+        {/* Fixed AppBarHeader at the top */}
+        <Box sx={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: (theme) => theme.zIndex.appBar, maxWidth: '1100px', width: '100%', marginLeft: 'auto', marginRight: 'auto', }}>
+          <AppBarHeader toggleMenu={toggleMenu} />
+        </Box>
+        {/* Main Layout below AppBarHeader */}
+        <Box sx={{ display: 'flex', flexGrow: 1, flexDirection: 'row', pt: { xs: '75px' }, minHeight: 0 }}>
           {/* Sidebar Menu */}
           {menuOpen && (
             <AppSidebarMenu
@@ -60,7 +63,7 @@ export default function App() {
             />
           )}
           {/* Main Content */}
-          <Box sx={{ flexGrow: 1, padding: 0.125, backgroundColor: '#ffffff' }} >
+          <Box sx={{ flexGrow: 1, padding: 0.125, backgroundColor: '#ffffff', overflow: 'hidden', pt: { xs: '48px', sm: '16px' }, minHeight: 0 }} >
             <Routes>
               {/* Default route redirects to the first link-type menu item */}
               <Route path="/" element={<Navigate to={flatMenuItems[0].path} replace />} />

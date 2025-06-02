@@ -54,7 +54,7 @@ export default function AppSidebarMenu({ menuItems, menuWidth, onMenuItemClick }
   };
 
   return (
-    <Box component="nav" aria-label="Sidebar Menu" sx={{ width: menuWidth, flexShrink: 0, padding: 2, borderRight: '1px solid rgba(0, 0, 0, 0.12)', backgroundColor: '#f4f4f4', }}>
+    <Box component="nav" aria-label="Sidebar Menu" sx={{ width: menuWidth, flexShrink: 0, padding: 2, borderRight: '1px solid rgba(0, 0, 0, 0.12)', backgroundColor: '#f4f4f4', pt: { xs: '48px', sm: '16px' } }}>
       <List>
         {renderMenuItems(menuItems, navigate, onMenuItemClick, openMenus, handleToggle)}
       </List>
