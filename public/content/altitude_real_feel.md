@@ -2,7 +2,7 @@
 
 ## Physical Altitude vs. Pressure Altitude
 
-A comparison of Denali, K2, Everest, Chimborzo, Aconcagua, and Mt Vinson.
+Air pressure is related to physical altitude but it is also influenced by latitude, temperature, and weather. These non-altitude factors can alter the air pressure enough to change how you really feel at a specific elevation, similar to how wind chill makes you feel colder than the physical temperature indicates. Here we compare the physical altitude vs. pressure altitude of the following peaks: Denali, K2, Everest, Chimborzo, Aconcagua, and Mt Vinson.
 
 ## Physical Altitude
 
@@ -27,7 +27,7 @@ We get oxygen from the atmosphere which is a large mass of air that is several m
 
 ## Other factors that affect oxygen deprivation
 
-Standard altitude-pressure tables allow mountaineers and aviators to determine their approximate height by measuring atmospheric pressure. Inversely, the height of a mountain approximately determines the pressure of the air on its summit. This general relationship usually works quite well; however, factors other than physical altitude, such as latitude, temperature, and weather also effect the air pressure and contribute to how you truly feel at a particular elevation. Think in terms of how wind chill can be significantly different than the actual temperature.
+Standard altitude-pressure tables allow mountaineers and aviators to determine their approximate height by measuring atmospheric pressure. Inversely, the height of a mountain approximately determines the pressure of the air on its summit. This general relationship usually works quite well; however, factors other than physical altitude, such as latitude, temperature, and weather also effect the air pressure and contribute to how you truly feel at a particular elevation.
 
 ## Latitude
 
